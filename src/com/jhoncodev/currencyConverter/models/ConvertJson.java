@@ -7,7 +7,7 @@ public class ConvertJson {
     public static void fromExchangeApi(String json, String baseCurrency, String currencyToConvert, float baseBalance){
         try {
             Gson gson = new GsonBuilder().setPrettyPrinting().create();
-            CurrencyExhangeAPI currencyExhangeAPI = gson.fromJson(json, CurrencyExhangeAPI.class);
+            CurrencyExchangeAPI currencyExhangeAPI = gson.fromJson(json, CurrencyExchangeAPI.class);
 
             ConvertCurrency convertedCurrency = new ConvertCurrency(currencyExhangeAPI, baseCurrency, currencyToConvert, baseBalance);
             convertedCurrency.showInfoToUser();

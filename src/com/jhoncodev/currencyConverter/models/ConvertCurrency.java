@@ -6,7 +6,7 @@ public class ConvertCurrency {
     private float baseBalance;
     private float convertedBalance;
 
-    public ConvertCurrency(CurrencyExhangeAPI currencyExhangeAPI, String baseCurrency, String currencyToConvert, float baseBalance){
+    public ConvertCurrency(CurrencyExchangeAPI currencyExhangeAPI, String baseCurrency, String currencyToConvert, float baseBalance){
         this.convertedBalance = currencyExhangeAPI.conversion_result();
         this.baseCurrency = baseCurrency;
         this.convertedCurrency = currencyToConvert;

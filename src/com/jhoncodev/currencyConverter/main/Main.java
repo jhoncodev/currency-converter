@@ -1,8 +1,6 @@
 package com.jhoncodev.currencyConverter.main;
 
-import com.jhoncodev.currencyConverter.models.ConvertCurrency;
 import com.jhoncodev.currencyConverter.models.UseApi;
-
 import java.util.Scanner;
 
 public class Main {
@@ -17,7 +15,7 @@ public class Main {
             System.out.println("3) Argentine Peso => United States Dollar");
             System.out.println("4) United States Dollar => Argentine Peso");
             System.out.println("5) Brazilian Real => United States Dollar");
-            System.out.println("6)United States Dollar => Brazilian Real");
+            System.out.println("6) United States Dollar => Brazilian Real");
             System.out.println("7) Colombian Peso => United States Dollar");
             System.out.println("8) United States Dollar => Colombian Peso");
             System.out.println("9) Exit\n");
