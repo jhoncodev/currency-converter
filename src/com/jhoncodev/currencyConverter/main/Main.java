@@ -1,5 +1,6 @@
 package com.jhoncodev.currencyConverter.main;
 
+import com.jhoncodev.currencyConverter.models.ConvertCurrency;
 import com.jhoncodev.currencyConverter.models.UseApi;
 
 import java.util.Scanner;
@@ -10,7 +11,7 @@ public class Main {
         while (true) {
 
             System.out.println("******************************************");
-            System.out.println("Welcome to the Currency Converter\n");
+            System.out.println("Welcome to the ConvertCurrency Converter\n");
             System.out.println("1) Peruvian Sol => United States Dollar");
             System.out.println("2) United States Dollar => Peruvian Sol");
             System.out.println("3) Argentine Peso => United States Dollar");
@@ -45,7 +46,7 @@ public class Main {
                 System.out.print("Enter balance to convert: ");
                 float balanceToConvert = scanner.nextFloat();
 
-                UseApi.useExchangeRateApi(baseCurrency, convertToCurrency, String.valueOf(balanceToConvert));
+                UseApi.useExchangeRateApi(baseCurrency, convertToCurrency, balanceToConvert);
 
             }else{
                 System.err.println("Enter a correct option please!");
