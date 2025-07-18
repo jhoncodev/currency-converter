@@ -1,4 +1,5 @@
 package com.jhoncodev.currencyConverter.models;
 
-public class ToJson {
+public class ConvertJson {
+
 }

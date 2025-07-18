@@ -5,8 +5,4 @@ public class Currency {
     private String convertedCurrency;
     private Float baseBalance;
     private Float convertedBalance;
-
-    public Currency(){
-
-    }
 }

@@ -1,11 +1,12 @@
 package com.jhoncodev.currencyConverter.main;
 
+import com.jhoncodev.currencyConverter.models.UseApi;
+
 import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-
         while (true) {
 
             System.out.println("******************************************");
@@ -26,6 +27,25 @@ public class Main {
                 if (op == 9) {
                     break;
                 }
+
+                String baseCurrency = "";
+                String convertToCurrency = "";
+
+                switch (op){
+                    case 1: baseCurrency = "PEN"; convertToCurrency = "USD"; break;
+                    case 2: baseCurrency = "USD"; convertToCurrency = "PEN"; break;
+                    case 3: baseCurrency = "ARS"; convertToCurrency = "USD"; break;
+                    case 4: baseCurrency = "USD"; convertToCurrency = "ARS"; break;
+                    case 5: baseCurrency = "BRL"; convertToCurrency = "USD"; break;
+                    case 6: baseCurrency = "USD"; convertToCurrency = "BRL"; break;
+                    case 7: baseCurrency = "COP"; convertToCurrency = "USD"; break;
+                    case 8: baseCurrency = "USD"; convertToCurrency = "COP"; break;
+                }
+
+                System.out.print("Enter balance to convert: ");
+                float balanceToConvert = scanner.nextFloat();
+
+                UseApi.useExchangeRateApi(baseCurrency, convertToCurrency, String.valueOf(balanceToConvert));
 
             }else{
                 System.err.println("Enter a correct option please!");
