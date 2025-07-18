@@ -10,7 +10,7 @@ public class ConvertJson {
             CurrencyExhangeAPI currencyExhangeAPI = gson.fromJson(json, CurrencyExhangeAPI.class);
 
             ConvertCurrency convertedCurrency = new ConvertCurrency(currencyExhangeAPI, baseCurrency, currencyToConvert, baseBalance);
-            convertedCurrency.showInfoConverted();
+            convertedCurrency.showInfoToUser();
 
         }catch (Exception e){
             System.err.println(e.getMessage());

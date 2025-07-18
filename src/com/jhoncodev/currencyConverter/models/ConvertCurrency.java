@@ -13,9 +13,8 @@ public class ConvertCurrency {
         this.baseBalance = baseBalance;
     }
 
-    public void showInfoConverted(){
-        System.out.println("Hello, this is the base currency: "+this.baseCurrency+" | this is the currency to convert: "+this.convertedCurrency);
-        System.out.println("And this is base balance: "+this.baseBalance+" | and finally this is the converted balance: "+this.convertedBalance);
+    public void showInfoToUser(){
+        System.out.println("The value "+this.baseBalance +" ["+this.baseCurrency+"]"+" corresponds to the final value =>> "+this.convertedBalance+" ["+this.convertedCurrency+"]");
     }
 
     @Override
